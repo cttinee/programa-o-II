@@ -1,2 +1,2 @@
-# programa-o-II
+# programacao-II
 Atividades da disciplina de Programação II
