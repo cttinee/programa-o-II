@@ -1,5 +1,4 @@
-       
 def repeticao ():
-    for i in range(8):
-        print(str(i) * i)
+    for i in range(1,9):
+      print(str(i)*i)
 repeticao()
