@@ -1,16 +1,13 @@
-def Saudacao():
+def saudacao():
     nome = input("Olá! Como gostaria de ser chamado? ").capitalize()
-    if nome[-1] == "o":
-        print(f"Seja muito bem vindo {nome}!!\n")
-    else:
-        print(f"Seja muito bem vinda {nome}!!\n")
+        print(f"Seja bem vindo(a) {nome}!!\n")
     return nome
 
-def Comprimento():
+def comprimento():
     print("Você escolheu a conversão de comprimento.")
     medida = input("Qual a medida da conversão?\n Centimetro(C):\n Metro(M):\n Kilometro(K):/n").upper()
     medida_conversao = input("Para qual medida você quer converter?\n Centimetro(C):\n Metro(M):\n Kilometro(K):/n").upper()
-    valor = float(input("Digite o valor para converter:/n"))
+    valor = float(input("Digite o valor que deseja converter:/n"))
     valor_convertido = 0
     if medida != medida_conversao:
         valor_convertido = 0
@@ -30,11 +27,11 @@ def Comprimento():
         print("Medidas inválidas!")
     print(valor_convertido)
 
-def Volume():
+def volume():
     print("Você escolheu converter volume.")
     medida = input("Qual a medida da conversão?\n Mililitro(M)\n Litro(L):").upper()
     medida_conversao = input("Para qual medida você quer converter?\n Mililitro(M)\n Litro(L):").upper()
-    valor = float(input("Digite o valor para converter:"))
+    valor = float(input("Digite o valor que deseja converter:"))
     valor_convertido = 0
     if medida != medida_conversao:
         valor_convertido = 0
@@ -46,11 +43,11 @@ def Volume():
         print("Medidas inválidas!")
     print(valor_convertido)
 
-def Massa():
+def massa():
     print("Você escolheu converter massa.")
     medida = input("Qual a medida da conversão?\n Grama(G)\n Quilograma(K)\n Tonelada(T):").upper()
     medida_conversao = input("Para qual medida você quer converter?\n Grama(G)\n Quilograma(Q)\n Tonelada(T):").upper()
-    valor = float(input("Digite o valor para converter:"))
+    valor = float(input("Digite o valor que deseja converter:"))
     valor_convertido = 0
     if medida != medida_conversao:
         valor_convertido = 0
@@ -70,11 +67,11 @@ def Massa():
         print("Medidas inválidas!")
     print(valor_convertido)
 
-def Temperatura():
+def temperatura():
     print("Você escolheu converter temperatura.")
     medida = input("Qual a medida da conversão?\n Celsius(C)\n Fahrenheit(F)\n Kelvin(K):").upper()
     medida_conversao = input("Para qual medida você quer converter?\n Celsius(C)\n Fahrenheit(F)\n Kelvin(K):").upper()
-    valor = float(input("Digite o valor para converter:"))
+    valor = float(input("Digite o valor que deseja converter:"))
     if medida != medida_conversao:
         valor_convertido = 0
         if medida == "C" and medida_conversao == "F":
@@ -89,11 +86,11 @@ def Temperatura():
         print("Medidas inválidas!")
     print(valor_convertido)
 
-def Area():
+def area():
     print("Você escolheu converter área.")
     medida = input("Qual a medida da conversão?\n Centímetro quadrado(C)\n Metro quadrado(M)\n Hectare(H)").upper()
     medida_conversao = input("Para qual medida você quer converter?\n \nCentímetro quadrado(C)\n Metro quadrado(M)\n Hectare(H)").upper()
-    valor = float(input("Digite o valor para converter:"))
+    valor = float(input("Digite o valor que deseja converter:"))
     if medida != medida_conversao:
         valor_convertido = 0
         if medida == "C" and medida_conversao == "M":
