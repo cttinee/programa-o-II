@@ -1,24 +1,25 @@
 from funcao import *
 
-nome = Saudacao()
+nome = saudacao()
 
-resp = "sim"
+resposta = "sim"
+resposta = resposta.lower()
 
-while resp == "sim":
-    conversão = input(f"Qual conversão deseja fazer {nome}?\nComprimento, Volume, Massa, Área ou Temperatura: ").lower()
+while resposta == "sim":
+    conversão = input(f"Qual conversão você deseja fazer {nome}?\nComprimento, Volume, Massa, Área ou Temperatura: ").lower()
     if conversão == "comprimento":
-        Comprimento()
+        comprimento()
         pass
     elif conversão == "volume":
-        Volume()
+        volume()
         pass
     elif conversão == "massa":
-        Massa()
+        massa()
         pass
     elif conversão == "temperatura":
-        Temperatura()
+        temperatura()
         pass
     elif conversão == "area":
-        Area()
+        area()
         pass
-    resp = input("Quer fazer uma nova conversão?")
+    resp = input("Gostaria de fazer uma nova conversão?")
